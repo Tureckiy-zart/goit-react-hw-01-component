@@ -1,8 +1,11 @@
 import React from "react";
-import {Examples} from "./Examples";
+import { Profile } from "./Examples";
+import user from "../data/user.json";
 
 export const App = () => (
   <>
-      <Examples/>
+    {user.map((user) => {
+      return <Profile key={Date.now} {...user} />;
+    })}
   </>
 );
