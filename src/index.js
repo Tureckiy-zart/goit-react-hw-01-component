@@ -13,5 +13,10 @@ import { TransactionHistory } from "./components/transactions/TransactionHistory
 // ReactDOM.render(<App />, refs.root);
 // ReactDOM.render(<AppFriendList/>, refs.root)
 // ReactDOM.render(<StatisticList title={"Upload stats"}/>, refs.root)
-ReactDOM.render(<TransactionHistory/>, refs.root)
+// ReactDOM.render(<TransactionHistory/>, refs.root)
+
+ReactDOM.render(<App />, refs.root);
+ReactDOM.render(<AppFriendList/>, document.getElementById('root1') )
+ReactDOM.render(<StatisticList title={"Upload stats"}/>, document.getElementById('root2'))
+ReactDOM.render(<TransactionHistory/>, document.getElementById('root3'))
 
