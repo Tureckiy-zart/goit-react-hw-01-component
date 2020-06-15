@@ -3,14 +3,8 @@ import styles from "./transactions.module.css";
 
 export const Transactions = ({ type, amount, currency }) => (
   <>
-    {/* <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead> */}
+    {/* <table className="transaction-history"> */}
+
       <tbody>
         <tr>
           <td>{type}</td>
@@ -21,3 +15,15 @@ export const Transactions = ({ type, amount, currency }) => (
     {/* </table> */}
   </>
 );
+
+export const Thead = ()=>(
+    <>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Currency</th>
+    </tr>
+  </thead></>
+)
+
