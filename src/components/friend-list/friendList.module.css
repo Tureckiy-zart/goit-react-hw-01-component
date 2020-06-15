@@ -16,8 +16,8 @@
   border-radius: 20px;
   margin-bottom: 16px;
 }
-.item:last-child{
-    margin-bottom: 0px;  
+.item:last-child {
+  margin-bottom: 0px;
 }
 
 .green {
@@ -32,4 +32,10 @@
   background-color: red;
   width: 15px;
   height: 15px;
+}
+
+.item:hover {
+  background: #e8f6ff;
+  color: rgb(57, 57, 57);
+  color: #026242;
 }

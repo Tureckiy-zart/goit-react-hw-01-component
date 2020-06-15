@@ -1,17 +1,10 @@
 import React from "react";
-import styles from "./transactions.module.css";
 import transactions from "../../data/transactions.json";
-import { TransactionsBody, TransactionsThead } from "./Transactions";
-
-const { transactionHistory } = styles;
+import { TransactionsBody, TransactionsThead, Table } from "./Transactions";
 
 export const TransactionHistory = () => (
-  <table className={transactionHistory}>
+  <Table>
     <TransactionsThead />
-    <>
-      {transactions.map((transaction) => (
-        <TransactionsBody key={transaction.id} {...transaction} />
-      ))}
-    </>
-  </table>
+    {transactions.map((transaction) => (<TransactionsBody key={transaction.id} {...transaction} />))}
+  </Table>
 );

@@ -2,8 +2,15 @@ import React from "react";
 import styles from "./statistic.module.css";
 
 // import stats from "../../data/statistical-data.json";
-const { titles, a, item, wrapper } = styles;
+const { titles, a, item, wrapper, statistics, list } = styles;
 
+export const SectionInsert = ({ children }) => (<section className={statistics}>{children}</section>);
+export const Title = ({ title }) => (
+  <div className={wrapper}>
+    {{ title } && <h2 className={titles}>{title}</h2>}
+  </div>
+);
+export const UlInsert = ({ children }) => <ul className={list}>{children}</ul>;
 export const StatisticComponentList = ({ label, percentage }) => (
   <>
     <li className={(a, item)}>
@@ -13,8 +20,4 @@ export const StatisticComponentList = ({ label, percentage }) => (
   </>
 );
 
-export const Title = ({ title }) => (
-  <div className={wrapper}>
-    {{ title } && <h2 className={titles}>{title}</h2>}
-  </div>
-);
+

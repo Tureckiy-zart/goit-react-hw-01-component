@@ -27,4 +27,3 @@ export const Profile = ({ avatar, name, tag, location, stats }) => (
     </div>
   </>
 );
-

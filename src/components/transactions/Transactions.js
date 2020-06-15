@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./transactions.module.css";
 
+const { transactionHistory } = styles;
+
+
+export const Table = ({ children }) =>  <table className={transactionHistory}>{children}</table>;
+
 export const TransactionsBody = ({ type, amount, currency }) => (
   <>
       <tbody>
