@@ -1,57 +1,20 @@
 import React from "react";
+import styles from "./statistic.module.css";
+
 // import stats from "../../data/statistical-data.json";
+const { titles, a, item, wrapper } = styles;
 
-// export const StatisticComponent = ({ title, label, percentage, cildren}) => (
-//   <>
-//     <section className="statistics">
-//       {{ title } && <h2 className="title">{title}</h2>}
+export const StatisticComponentList = ({ label, percentage }) => (
+  <>
+    <li className={(a, item)}>
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage}</span>
+    </li>
+  </>
+);
 
-//     </section>
-//   </>
-// );
-
-// const StatisticComponentList = ({ label, percentage }) => (
-//   <>
-//     <li className="item">
-//       <span className="label">{label}</span>
-//       <span className="percentage">{percentage}</span>
-//     </li>
-//   </>
-// );
-
-// const StatisticList = () => (
-//     <>
-//       <ul className="stat-list">
-//         {stats.map((item) => (
-//           <StatisticComponentList {...item} />
-//         ))}
-//       </ul>
-//     </>
-//   );
-
-// export const StatisticComponent = ({ title, label, percentage }) => (
-//   <>
-//     <section className="statistics">
-//       {{ title } && <h2 className="title">{title}</h2>}
-
-//       <ul className="stat-list">
-//         <li className="item">
-//           <span className="label">{label}</span>
-//           <span className="percentage">{percentage}</span>
-//         </li>
-//         <li className="item">
-//           <span className="label">{label}</span>
-//           <span className="percentage">{percentage}</span>
-//         </li>
-//         <li className="item">
-//           <span className="label">{label}</span>
-//           <span className="percentage">{percentage}</span>
-//         </li>
-//         <li className="item">
-//           <span className="label">{label}</span>
-//           <span className="percentage">{percentage}</span>
-//         </li>
-//       </ul>
-//     </section>
-//   </>
-// );
+export const Title = ({ title }) => (
+  <div className={wrapper}>
+    {{ title } && <h2 className={titles}>{title}</h2>}
+  </div>
+);

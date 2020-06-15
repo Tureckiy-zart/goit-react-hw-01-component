@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./transactions.module.css";
 
-export const Transactions = ({ type, amount, currency }) => (
+export const TransactionsBody = ({ type, amount, currency }) => (
   <>
-    {/* <table className="transaction-history"> */}
-
       <tbody>
         <tr>
           <td>{type}</td>
@@ -12,11 +10,10 @@ export const Transactions = ({ type, amount, currency }) => (
           <td>{currency}</td>
         </tr>
       </tbody>
-    {/* </table> */}
   </>
 );
 
-export const Thead = ()=>(
+export const TransactionsThead = ()=>(
     <>
   <thead>
     <tr>
